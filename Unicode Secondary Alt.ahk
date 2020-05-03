@@ -5,12 +5,12 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 Suspend, On
 
-AppsKey:: 
+RAlt:: 
 	Suspend, Permit
 	Suspend, Off
-	Send {Alt down}
-	KeyWait AppsKey
-	Send {Alt up}
+	Send {RAlt down}
+	KeyWait RAlt
+	Send {RAlt up}
 	Suspend, On
 return
 
